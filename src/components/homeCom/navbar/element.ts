@@ -84,6 +84,10 @@ export const TopbarWrapper = styled.div`
   a {
     text-decoration: none;
   }
+
+  .lightCentered {
+    margin-left: auto;
+  }
 `;
 
 export const TopDiv = styled.div`

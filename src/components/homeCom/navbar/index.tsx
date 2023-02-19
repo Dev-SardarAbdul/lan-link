@@ -87,7 +87,7 @@ function Topbar() {
           )}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className={visible ? "me-auto lightCentered" : "me-auto "}>
               <Nav.Link className={visible ? "darkText" : "lightText"}>
                 Home
               </Nav.Link>

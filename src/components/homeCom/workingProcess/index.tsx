@@ -43,7 +43,7 @@ function WorkingProcess() {
               <LeftDiv>
                 <img className="img-fluid working" src={workingImg} />
                 <WorkingLayoutDiv>
-                  <WorkingProcessText>Working Process</WorkingProcessText>
+                  <WorkingProcessText>3. Working Process</WorkingProcessText>
                   <WorkingProcessMainText>
                     Our Working
                     <br /> Process - How <br /> We Work For <br /> Our Customers
