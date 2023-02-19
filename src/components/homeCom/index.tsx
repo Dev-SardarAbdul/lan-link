@@ -1,4 +1,5 @@
 import AboutSection from "./aboutSection";
+import Contact from "./contact";
 import HeroSection from "./heroSection";
 import LetsTalk from "./letsTalkSection";
 import Topbar from "./navbar";
@@ -14,6 +15,7 @@ const HomeCom = () => {
       <Services />
       <LetsTalk />
       <WorkingProcess />
+      <Contact />
       <h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
         consectetur nesciunt, quas consequuntur aperiam ullam dolorem omnis vel
