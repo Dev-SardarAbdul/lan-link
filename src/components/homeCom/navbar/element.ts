@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const TopbarWrapper = styled.div`
+  background-color: #fff;
+
   .darkNav {
     background: linear-gradient(90deg, #03228f 10%, #0e73e4) !important;
     padding: 15px 0px !important;
@@ -77,6 +79,10 @@ export const TopbarWrapper = styled.div`
     @media (min-width: 992px) {
       display: none;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
 

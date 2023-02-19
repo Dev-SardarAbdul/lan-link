@@ -4,7 +4,6 @@ export const ServicesWrapper = styled.div`
   overflow: hidden;
   margin-top: 4rem;
   background-color: rgb(246, 247, 249);
-  padding-bottom: 5rem;
 `;
 
 export const ServicesText = styled.h4`
