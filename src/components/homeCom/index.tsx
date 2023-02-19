@@ -3,6 +3,7 @@ import HeroSection from "./heroSection";
 import LetsTalk from "./letsTalkSection";
 import Topbar from "./navbar";
 import Services from "./servicesSection";
+import WorkingProcess from "./workingProcess";
 
 const HomeCom = () => {
   return (
@@ -12,6 +13,7 @@ const HomeCom = () => {
       <AboutSection />
       <Services />
       <LetsTalk />
+      <WorkingProcess />
       <h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
         consectetur nesciunt, quas consequuntur aperiam ullam dolorem omnis vel
