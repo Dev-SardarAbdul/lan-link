@@ -4,23 +4,25 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+ font-family: 'Livvic', sans-serif;
   } 
  body
 {
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
+ font-family: 'Livvic', sans-serif;
+  background-color: rgb(246, 247, 249);
+ 
    
 }
 
 iframe
 {
-  position: absolute !important;
+  /* position: absolute !important;
   width: none !important;
   top: none !important;
   left: none !important;
   right: none !important;
-  z-index: -5 !important;
+  z-index: -5 !important; */
 }
 
  /* Loader */
