@@ -59,6 +59,18 @@ export const TopbarWrapper = styled.div`
     font-weight: 500;
     font-size: 18px;
 
+    &::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+
     @media (max-width: 991.98px) {
       color: #03228f !important;
       text-align: center;
@@ -66,6 +78,18 @@ export const TopbarWrapper = styled.div`
 
     &.darkText {
       color: #03228f;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: #03228f;
+        transition: width 0.3s ease;
+      }
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 

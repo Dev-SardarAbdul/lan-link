@@ -6,18 +6,33 @@ import LetsTalk from "./letsTalkSection";
 import Topbar from "./navbar";
 import Services from "./servicesSection";
 import WorkingProcess from "./workingProcess";
+import { useEffect, useState } from "react";
+import MainLoader from "./loader";
 
 const HomeCom = () => {
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
+  }, []);
+
   return (
     <div>
-      <Topbar />
-      <HeroSection />
-      <AboutSection />
-      <Services />
-      <LetsTalk />
-      <WorkingProcess />
-      <Contact />
-      <Footer />
+      {loader && <MainLoader />}
+      {!loader && (
+        <>
+          <Topbar />
+          <HeroSection />
+          <AboutSection />
+          <Services />
+          <LetsTalk />
+          <WorkingProcess />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 };

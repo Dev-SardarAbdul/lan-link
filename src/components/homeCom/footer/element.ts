@@ -39,6 +39,11 @@ export const RightWrapper = styled.div`
     gap: 10px;
   }
 
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
   p {
     margin: 0;
     font-weight: 500;
