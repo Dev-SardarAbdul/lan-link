@@ -5,6 +5,7 @@ import "antd/dist/antd.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
 import theme from "theme";
+import "animate.css/animate.min.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

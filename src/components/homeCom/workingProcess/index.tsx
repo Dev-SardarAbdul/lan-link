@@ -10,6 +10,7 @@ import {
 } from "./element";
 import workingImg from "../../../assets/images/workingProcessImg.jpeg";
 import Card from "react-bootstrap/Card";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function WorkingProcess() {
   const cardData = [
@@ -40,34 +41,39 @@ function WorkingProcess() {
         <div className="wrapper">
           <Row>
             <Col lg={4}>
-              <LeftDiv>
-                <img className="img-fluid working" src={workingImg} />
-                <WorkingLayoutDiv>
-                  <WorkingProcessText>3. Working Process</WorkingProcessText>
-                  <WorkingProcessMainText>
-                    Our Working
-                    <br /> Process - How <br /> We Work For <br /> Our Customers
-                  </WorkingProcessMainText>
-                  <ContactUsBtn>Contact Us</ContactUsBtn>
-                </WorkingLayoutDiv>
-              </LeftDiv>
+              <AnimationOnScroll animateIn="animate__fadeInUp">
+                <LeftDiv>
+                  <img className="img-fluid working" src={workingImg} />
+                  <WorkingLayoutDiv>
+                    <WorkingProcessText>3. Working Process</WorkingProcessText>
+                    <WorkingProcessMainText>
+                      Our Working
+                      <br /> Process - How <br /> We Work For <br /> Our
+                      Customers
+                    </WorkingProcessMainText>
+                    <ContactUsBtn>Contact Us</ContactUsBtn>
+                  </WorkingLayoutDiv>
+                </LeftDiv>
+              </AnimationOnScroll>
             </Col>
             <Col lg={8}>
-              <RightDiv>
-                <Row>
-                  {cardData.map((item) => (
-                    <Col key={item.id} lg={6}>
-                      <Card>
-                        <Card.Body>
-                          <h4 className="cardNumber">{item.id}.</h4>
-                          <Card.Title>{item.header}</Card.Title>
-                          <Card.Text>{item.text}</Card.Text>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  ))}
-                </Row>
-              </RightDiv>
+              <AnimationOnScroll animateIn="animate__fadeInUp">
+                <RightDiv>
+                  <Row>
+                    {cardData.map((item) => (
+                      <Col key={item.id} lg={6}>
+                        <Card>
+                          <Card.Body>
+                            <h4 className="cardNumber">{item.id}.</h4>
+                            <Card.Title>{item.header}</Card.Title>
+                            <Card.Text>{item.text}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                    ))}
+                  </Row>
+                </RightDiv>
+              </AnimationOnScroll>
             </Col>
           </Row>
         </div>

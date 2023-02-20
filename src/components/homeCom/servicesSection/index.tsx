@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import { GiCctvCamera } from "react-icons/gi";
 import profile from "../.././../assets/docs/profile.pdf";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function Services() {
   const cardData = [
@@ -81,29 +82,34 @@ function Services() {
   return (
     <ServicesWrapper id="services">
       <Container>
-        <ServicesText>
-          2. <span>Services</span>
-        </ServicesText>
-        <MainHeader>
-          We Are Offering following data center
-          <br /> Solutions & Services
-        </MainHeader>
+        <AnimationOnScroll animateIn="animate__bounce">
+          <ServicesText>
+            2. <span>Services</span>
+          </ServicesText>
+          <MainHeader>
+            We Are Offering following data center
+            <br /> Solutions & Services
+          </MainHeader>
+        </AnimationOnScroll>
+
         <CardContainer>
           <Row>
             {cardData.map((item) => (
               <Col key={item.id} className="d-flex justify-content-center">
-                <Card>
-                  {item.icon}
-                  <Card.Body>
-                    <Card.Title>{item.header}</Card.Title>
-                    <Card.Text>
-                      {item.desc}
-                      <a href={profile} download="Profile" target="_blank">
-                        read more...
-                      </a>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
+                <AnimationOnScroll animateIn="animate__fadeInUp">
+                  <Card>
+                    {item.icon}
+                    <Card.Body>
+                      <Card.Title>{item.header}</Card.Title>
+                      <Card.Text>
+                        {item.desc}
+                        <a href={profile} download="Profile" target="_blank">
+                          read more...
+                        </a>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </AnimationOnScroll>
               </Col>
             ))}
           </Row>
