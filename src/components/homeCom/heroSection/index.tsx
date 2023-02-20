@@ -4,7 +4,7 @@ import { HeroSectionWrapper, MainHeader, SubText } from "./element";
 
 function HeroSection() {
   return (
-    <HeroSectionWrapper>
+    <HeroSectionWrapper id="home">
       <Container>
         <Row>
           <Col lg={6}>

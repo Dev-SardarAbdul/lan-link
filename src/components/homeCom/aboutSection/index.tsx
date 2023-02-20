@@ -8,7 +8,6 @@ import {
   SubText,
 } from "./element";
 import about from "../../../assets/images/about.png";
-import { BiRightArrow } from "react-icons/bi";
 
 function AboutSection() {
   return (

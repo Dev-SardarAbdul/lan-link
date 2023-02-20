@@ -35,7 +35,7 @@ function WorkingProcess() {
     },
   ];
   return (
-    <WorkingProcessWrapper>
+    <WorkingProcessWrapper id="work-process">
       <Container>
         <div className="wrapper">
           <Row>

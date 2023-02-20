@@ -40,7 +40,7 @@ function Contact() {
     },
   ];
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <Container>
         <Row>
           <Col xl={4}>
@@ -49,7 +49,7 @@ function Contact() {
             </GetInTouchText>
             <LeftDiv>
               <LetsTalkText>Lets Talk</LetsTalkText>
-              <MainText>Speak With Us</MainText>
+              <MainText>Connect With Us</MainText>
 
               {contactInfo.map((item) => (
                 <ContactMethodDiv>

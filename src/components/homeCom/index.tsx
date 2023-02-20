@@ -1,5 +1,6 @@
 import AboutSection from "./aboutSection";
 import Contact from "./contact";
+import Footer from "./footer";
 import HeroSection from "./heroSection";
 import LetsTalk from "./letsTalkSection";
 import Topbar from "./navbar";
@@ -16,18 +17,7 @@ const HomeCom = () => {
       <LetsTalk />
       <WorkingProcess />
       <Contact />
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        consectetur nesciunt, quas consequuntur aperiam ullam dolorem omnis vel
-        maxime voluptas exercitationem magnam vitae nemo quis. Reiciendis
-        molestias quisquam earum odit.
-      </h1>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        consectetur nesciunt, quas consequuntur aperiam ullam dolorem omnis vel
-        maxime voluptas exercitationem magnam vitae nemo quis. Reiciendis
-        molestias quisquam earum odit.
-      </h1>
+      <Footer />
     </div>
   );
 };

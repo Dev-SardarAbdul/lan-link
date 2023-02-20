@@ -79,7 +79,7 @@ function Services() {
     },
   ];
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id="services">
       <Container>
         <ServicesText>
           2. <span>Services</span>

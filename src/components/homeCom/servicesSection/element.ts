@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const ServicesWrapper = styled.div`
   overflow: hidden;
-  margin-top: 4rem;
   background-color: rgb(246, 247, 249);
+
+  .container {
+    margin-top: 4rem;
+  }
 `;
 
 export const ServicesText = styled.h4`

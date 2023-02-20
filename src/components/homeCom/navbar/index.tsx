@@ -88,7 +88,10 @@ function Topbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={visible ? "me-auto lightCentered" : "me-auto "}>
-              <Nav.Link className={visible ? "darkText" : "lightText"}>
+              <Nav.Link
+                className={visible ? "darkText" : "lightText"}
+                href="#home"
+              >
                 Home
               </Nav.Link>
               <Nav.Link
@@ -99,15 +102,21 @@ function Topbar() {
               </Nav.Link>
               <Nav.Link
                 className={visible ? "darkText" : "lightText"}
-                href="#link"
+                href="#services"
               >
                 Services
               </Nav.Link>
               <Nav.Link
                 className={visible ? "darkText" : "lightText"}
-                href="#link"
+                href="#work-process"
               >
                 Work Process
+              </Nav.Link>
+              <Nav.Link
+                className={visible ? "darkText" : "lightText"}
+                href="#contact"
+              >
+                Contact
               </Nav.Link>
             </Nav>
             <>

@@ -33,6 +33,10 @@ export const MainText = styled.h2`
   font-weight: 700;
   line-height: 46px;
   color: #fff;
+
+  @media (max-width: 575.98px) {
+    font-size: 32px;
+  }
 `;
 
 export const ContactMethodDiv = styled.div`
