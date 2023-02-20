@@ -103,6 +103,7 @@ export const LetsTalkBtn = styled.button`
   transition: all 0.4s;
 
   &:hover {
-    background-image: linear-gradient(250deg, #03228f 19%, #4e95ed);
+    animation-name: heartBeat;
+    animation-duration: 1s;
   }
 `;

@@ -5,6 +5,7 @@ export const ContactWrapper = styled.div`
 
   .container {
     margin-top: 4rem;
+    padding-bottom: 1rem;
   }
 `;
 
@@ -149,6 +150,11 @@ export const SubmitNowBtn = styled.button`
   color: #fff;
   border-radius: 30px 30px 30px 30px;
   margin-top: 2rem;
+
+  &:hover {
+    animation-name: heartBeat;
+    animation-duration: 1s;
+  }
 
   @media (max-width: 1199.98px) {
     display: block;

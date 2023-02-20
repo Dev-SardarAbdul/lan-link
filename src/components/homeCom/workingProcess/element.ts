@@ -80,6 +80,11 @@ export const ContactUsBtn = styled.button`
   font-weight: 600;
   font-size: 18px;
   margin-top: 2rem;
+
+  &:hover {
+    animation-name: heartBeat;
+    animation-duration: 1s;
+  }
 `;
 
 export const RightDiv = styled.div`

@@ -34,6 +34,11 @@ export const TopbarWrapper = styled.div`
     border: none !important;
     padding: 5px 20px;
     border-radius: 5px;
+
+    &:hover {
+      animation-name: heartBeat;
+      animation-duration: 1s;
+    }
   }
 
   .darkBtn {
@@ -45,6 +50,11 @@ export const TopbarWrapper = styled.div`
     border: none !important;
     padding: 5px 20px;
     border-radius: 5px;
+
+    &:hover {
+      animation-name: heartBeat;
+      animation-duration: 1s;
+    }
 
     @media (max-width: 991.98px) {
       background: linear-gradient(90deg, #03228f 10%, #0e73e4);

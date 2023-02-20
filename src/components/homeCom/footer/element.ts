@@ -49,6 +49,18 @@ export const RightWrapper = styled.div`
     font-weight: 500;
     cursor: pointer;
 
+    &::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: rgb(3, 138, 255);
+      transition: width 0.3s ease;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+
     @media (max-width: 575.98px) {
       display: none;
     }
